@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(25, 25, 44) black;
+}
+
+
+
+
+#navbar{
+    background-color: #000;
+}
+
+.social img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+.social img:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+ 
+}
+.social{
+    background-color: rgb(114, 114, 114);
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 0%;
+    top: 30%;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: rgb(25, 25, 44);
+}
+
+nav{
+    background: rgb(25, 25, 44);
+    color: #fff;
+    display: flex;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+}
+
+nav span {
+    color: rgb(183, 247, 7);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+nav .nav-items{
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-items li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-items li a:hover{
+    box-shadow: 10px 10px rgb(0, 0, 0);
+    background: rgb(126, 238, 35);
+    color: rgb(0, 0, 0);
+}
+
+.about-me{
+    background: rgb(25, 25, 44);
+    padding: 200px 50px;
+    height: 100vh;
+    width: 100%;
+}
+
+.about-me .intro{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 10px 10px black;
+}
+
+.about-me h1{
+    font-size: 5rem;
+    font-weight: 50;
+    color: rgb(255, 255, 255);
+}
+
+.about-me p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.about-me p span{
+    color:rgb(126, 238, 35)
+}
+.about-me a{
+    padding: 15px 40px;
+    height: 75px;
+    width: 250px;
+    font-size: 2rem;
+    background:rgb(25, 25, 44);
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.about-me a:hover{
+    box-shadow: 15px 15px rgb(0, 0, 0);
+    background: rgb(126, 238, 35);
+    color: rgb(0, 0, 0);
+}
+
+.typing-text > .text {
+    color: rgb(126, 238, 35);
+    font-weight: 500;
+    border-right : 0.2rem solid rgb(126, 238, 35);
+    border-right-width: 5px;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    50%{
+        border-right: 0.2rem solid transparent;
+    }
+}
+
+.music{
+    padding: 70px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.music h1{
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    text-shadow: 10px 10px black;
+}
+
+.music h2{
+    color:rgb(126, 238, 35);
+    font-size: 2rem;
+    width: 350px;
+    text-align: center;
+    border: 1px solid white;
+}
+.music h3{
+    color:rgb(126, 238, 35);
+    font-size: 2rem;
+    width: 500px;
+    text-align: center;
+    border: 1px solid white;
+}
+.music .artist-list, .music .song-list{
+    padding : 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    overflow: hidden;
+}
+.music  li .card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.artist-list img{
+    width: 300px;
+    height: 200px;
+    transition: all 0.3s ease;
+}
+.artist-list img:hover{
+    width: 350px;
+    height: 250px;
+}
+.song-list img{
+    width: 200px;
+    height: 200px;
+}
+.song-list img:hover{
+    width: 250px;
+    height: 250px;
+    transition: all 0.3s ease;
+}
+.music li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.skills{
+    padding: 70px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.skills h1{
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    text-shadow: 10px 10px black;
+}
+
+.skills h2{
+    color:rgb(126, 238, 35);
+    font-size: 2rem;
+    width: 350px;
+    text-align: center;
+    border: 1px solid white;
+}
+.skills h3{
+    color:rgb(126, 238, 35);
+    font-size: 2rem;
+    width: 500px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.skills .languages-list, .skills .current-list{
+    padding : 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    overflow: hidden;
+}
+.skills  li .card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.languages-list img{
+    width: 300px;
+    height: 200px;
+    transition: all 0.3s ease;
+}
+.languages-list img:hover{
+    width: 350px;
+    height: 250px;
+}
+.current-list img{
+    width: 200px;
+    height: 200px;
+}
+.current-list img:hover{
+    width: 250px;
+    height: 250px;
+    transition: all 0.3s ease;
+}
+.skills li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.contact-me{
+    padding: 100px 100px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-me h1{
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 10px 10px rgb(0, 0, 0);
+}
+.contact-me form{
+    padding: 20px 30px;
+    height: 70%;
+    border: 1px solid rgb(3, 3, 3);
+    margin-top: 50px;
+    width: 800px;
+    background:rgb(54, 54, 54);
+    box-shadow: 50px 50px rgba(0, 0, 0, 0.479);
+}
+.contact-me form h2{
+    font-size: 2rem;
+    padding: 0 0 20px 0;
+    color:rgb(126, 238, 35)
+}
+
+form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+form .input-box input{
+    background:rgb(54, 54, 54);
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 3px solid #000;
+    outline: none;
+    resize: none;
+}
+form .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color:rgb(25, 25, 44);
+}
+form .input-box input:focus ~ span,form ,
+form .input-box input:valid ~ span,form {
+    color:rgb(126, 238, 35);
+    font-size: 1rem;
+    transform: translateY(-30px);
+}
+form .input-box input[type="submit"]{
+    width: 200px;
+    border: none;
+    background: rgb(25, 25, 44);
+    color: rgb(114, 114, 114);
+    transition: all 0.3s ease;
+}
+form .input-box input[type="submit"]:hover{
+    background: rgb(126, 238, 35);
+    color: black;
+    cursor: pointer;
+    box-shadow: 10px 10px black;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .about-me .intro {
+        font-size: 2rem;
+    }
+    .about-me h1{
+        font-size: 3rem;
+    }
+    .music{
+        padding: 10px;
+        align-items: center;
+    }
+    .music h1{
+        font-size: 2rem;
+    }
+    .music h2, .music h3{
+        font-size: 1.5rem;
+    }
+    .music .artist-list img{
+        width: 200px;
+        height: 100px;
+    }
+    .music .song-list img{
+        width: 100px;
+        height: 100px;
+    }
+    .contact-me{
+        align-items: center;
+    }
+    .contact-me form{
+        width: 80vw;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    nav{
+        padding: 15px 15px;
+    }
+    nav span{
+        font-size: 1.5rem;
+    }
+    nav .nav-items li a{
+        font-size: 1rem;
+    }
+    .about-me{
+        padding: 150px 30px;
+    }
+    .about-me h1{
+        font-size: 2rem;
+    }
+    .about-me a{
+        height: 30px;
+        width: 150px;
+        font-size: 1.5rem;
+    }
+    .contact-me{
+        padding: 70px 30px;
+        align-content: center;
+        align-items: center;
+    }
+    .contact-me form{
+        width: 90vw;
+        height: 500px;
+    }
+
+}
+@media only screen and (max-width: 450px) {
+   nav span{
+       font-size: 1rem;
+   }
+   .nav-items li a{
+       font-size: 1rem;
+   }
+   .music h2{
+       font-size: 1.5rem;
+       width: 250px;
+   }
+   .music h3{
+       font-size: 1.5rem;
+       width: 300px;
+   }
+    .contact-me{
+        padding-top: 150px;
+    }
+    .contact-me h1{
+        font-size: 1.5rem;
+    }
+    .contact-me form h2{
+        font-size: 1rem;
+    }
+    form .input-box input{
+        font-size: 1rem;
+    }
+    form .input-box span{
+        font-size: 1rem;
+    }
+}
